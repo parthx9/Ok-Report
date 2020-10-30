@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
+import Chart from 'react-apexcharts';
 
 class Home extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            options: {
+              chart: {
+                id: "basic-bar"
+              },
+              xaxis: {
+                categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+              }
+            },
+            series: [
+              {
+                name: "series-1",
+                data: [30, 40, 45, 50, 49, 60, 70, 91]
+              }
+            ]
+          };
+    }
     render(){
         return(
             <div className='containing'>
@@ -75,6 +96,7 @@ class Home extends Component {
                     <div className='col-12 image-section'>
                         <div className='card'>
                             <div className='card-body'>
+                                            
                             </div>
                         </div>
                     </div>
@@ -83,12 +105,26 @@ class Home extends Component {
                     <div className='col-5 pr-2'>
                         <div className='card'>
                             <div className='card-body'>
+                                <Chart
+                                    options={this.state.options}
+                                    series={this.state.series}
+                                    type="bar"
+                                    width="90%"
+                                    height='100%'
+                                />
                             </div>
                         </div>
                     </div>
                     <div className='col-5 pr-2'>
                         <div className='card'>
                             <div className='card-body'>
+                                <Chart
+                                    options={this.state.options}
+                                    series={this.state.series}
+                                    type="bar"
+                                    width="90%"
+                                    height='100%'
+                                />
                             </div>
                         </div>
                     </div>
