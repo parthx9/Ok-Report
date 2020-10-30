@@ -9,32 +9,64 @@ class Home extends Component {
                         <input className='form-control search' type='text' value='Search'></input>
                     </form>
                 </div>
-                <div className='row pt-4 pb-4'>
+                <div className='row pt-4 pb-4 overview-area'>
                     <div className='col-3 '>
                         <div className='card'>
                             <div className='card-body'>
-                                <i className='fa fa-car fa-lg p-1'></i>
+                                <div className='row'>
+                                    <div className='col-4'>
+                                        <i className='fa fa-car fa-lg p-1'></i>
+                                    </div>
+                                    <div className='col-8'>
+                                        <h6>New Patients</h6>
+                                        <h4>07</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className='col-3 '>
                         <div className='card'>
                             <div className='card-body'>
-                                <i className='fa fa-car fa-lg p-1'></i>
+                            <div className='row'>
+                                    <div className='col-4'>
+                                        <i className='fa fa-car fa-lg p-1'></i>
+                                    </div>
+                                    <div className='col-8'>
+                                        <h6>Operations</h6>
+                                        <h4>09</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className='col-3 '>
                         <div className='card'>
                             <div className='card-body'>
-                                <i className='fa fa-car fa-lg p-1'></i>
+                                <div className='row'>
+                                    <div className='col-4'>
+                                        <i className='fa fa-car fa-lg p-1'></i>
+                                    </div>
+                                    <div className='col-8'>
+                                        <h6>ICU Beds Vacant</h6>
+                                        <h4>21</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className='col-3 '>
                         <div className='card'>
                             <div className='card-body'>
-                                <i className='fa fa-car fa-lg p-1'></i>
+                                <div className='row'>
+                                    <div className='col-4'>
+                                        <i className='fa fa-car fa-lg p-1'></i>
+                                    </div>
+                                    <div className='col-8'>
+                                        <h6>Workload</h6>
+                                        <h4>21</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -70,11 +102,62 @@ class Home extends Component {
                 <div className='row appointment-area'>
                     <div className='col-12'>
                         <div className='card'>
-                            <div className='card-header'>
-                                <h5>Appointment Details</h5>
-                            </div>
+                            <h4 className='p-3'>Appointment Details</h4>
                             <div className='card-body'>
-
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">E-mail</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Visit Time</th>
+                                        <th scope="col">Medical Assistant</th>
+                                        <th scope="col">Conditions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">Parth Arora</th>
+                                        <td>parth@gmail.com</td>
+                                        <td>10/10/1000</td>
+                                        <td>12:00-1:00 PM</td>
+                                        <td>Mary Smith</td>
+                                        <td>Mumps</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">Parth Arora</th>
+                                        <td>parth@gmail.com</td>
+                                        <td>10/10/1000</td>
+                                        <td>12:00-1:00 PM</td>
+                                        <td>Mary Smith</td>
+                                        <td>Mumps</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">Parth Arora</th>
+                                        <td>parth@gmail.com</td>
+                                        <td>10/10/1000</td>
+                                        <td>12:00-1:00 PM</td>
+                                        <td>Mary Smith</td>
+                                        <td>Mumps</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">Parth Arora</th>
+                                        <td>parth@gmail.com</td>
+                                        <td>10/10/1000</td>
+                                        <td>12:00-1:00 PM</td>
+                                        <td>Mary Smith</td>
+                                        <td>Mumps</td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">Parth Arora</th>
+                                        <td>parth@gmail.com</td>
+                                        <td>10/10/1000</td>
+                                        <td>12:00-1:00 PM</td>
+                                        <td>Mary Smith</td>
+                                        <td>Mumps</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

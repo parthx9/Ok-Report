@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lato';
 }
 
 .containing{
@@ -24,8 +25,14 @@
     padding: 15px 20px 15px 20px;
 }
 
+.corona-card{
+    background-color: #08e9cb;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0px;
+}
+
 .brand-name{
-    font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 38.3333px;
@@ -40,9 +47,20 @@
     border: 0px;
 }
 
+.overview-area .card-body h6{
+    color: #25282B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.overview-area .card-body h4{
+    color: #13D7BC;
+    font-weight: bold;
+    font-size: 28px;
+}
+
 .nav li a{
     padding: 18px 5px 18px 5px;
-    font-family: Lato;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -62,7 +80,6 @@
 .register-patient-btn{
     background-color: #336CFB;
     border-radius: 7px;
-    font-family: Lato;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -85,7 +102,6 @@
 }
 
 .appointment-area .card{
-    height: 300px;
 }
 
 .appointment-area .card-header{
