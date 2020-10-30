@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.css';
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containing{
+    padding: 15px 20px 15px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.side-navbar{
+    height: 100%;
+    background: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-area{
+    background: 
+    rgb(0,255,209,0.17);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand{
+    padding: 15px 20px 15px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brand-name{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38.3333px;
+    line-height: 46px;
+    letter-spacing: 0.766667px;
+    color: #13D7BC;
 }
+
+.search{
+    border-radius: 15px;
+    width: 300px;
+}
+
+.nav li a{
+    padding: 18px 5px 18px 5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.120455px;
+    color: #52575C;
+}
+
+.nav .active{
+    color: #336CFB;
+}
+
+.nav li a:hover{
+    color: #336CFB;
+}
+
+.register-patient-btn{
+    background-color: #336CFB;
+    border-radius: 7px;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.120588px;
+    width: 300px;
+    color: #FFFFFF;
+}
+
+.main-area .card{
+    border-radius: 10px;
+    border: 0px;
+}
+
+/* .register-patient-btn:hover{
+    color: #336CFB;
+    background: #ffffff;
+} */
