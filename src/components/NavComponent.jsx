@@ -1,4 +1,4 @@
-import { getDefaultNormalizer } from '@testing-library/react';
+import { NavLink } from 'react-router-dom';
 import React, { Component } from 'react';
 
 
@@ -36,10 +36,10 @@ class Nav extends Component{
                     <button className='btn register-patient-btn'>Register Patient <i className='fa pl-2 fa-plus'></i></button>
                 </div>
                 <li class="nav-item pt-5">
-                    <a class="nav-link active"><i className='fas fa-chart-pie pr-2'></i> Dashboard</a>
+                    <NavLink to='/Home' class="nav-link active"><i className='fas fa-chart-pie pr-2'></i> Dashboard</NavLink>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" > <i className='fas fa-user-injured'></i>Patients</a>
+                    <NavLink class="nav-link" to='/Patients'> <i className='fas fa-user-injured'></i>Patients</NavLink>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" >Appointments</a>
