@@ -37,6 +37,7 @@
 .search{
     border-radius: 15px;
     width: 300px;
+    border: 0px;
 }
 
 .nav li a{
@@ -75,6 +76,21 @@
     border: 0px;
 }
 
+.image-area .card{
+    height: 300px;
+}
+
+.detail-area .card{
+    height: 300px;
+}
+
+.appointment-area .card{
+    height: 300px;
+}
+
+.appointment-area .card-header{
+    color: #25282B;
+}
 /* .register-patient-btn:hover{
     color: #336CFB;
     background: #ffffff;

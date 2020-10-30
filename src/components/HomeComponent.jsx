@@ -39,6 +39,46 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='row pb-4 image-area'>
+                    <div className='col-12 image-section'>
+                        <div className='card'>
+                            <div className='card-body'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='row pb-4 detail-area'>
+                    <div className='col-5 pr-2'>
+                        <div className='card'>
+                            <div className='card-body'>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-5 pr-2'>
+                        <div className='card'>
+                            <div className='card-body'>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-2'>
+                        <div className='card'>
+                            <div className='card-body'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='row appointment-area'>
+                    <div className='col-12'>
+                        <div className='card'>
+                            <div className='card-header'>
+                                <h5>Appointment Details</h5>
+                            </div>
+                            <div className='card-body'>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
