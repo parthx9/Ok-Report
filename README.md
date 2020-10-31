@@ -53,7 +53,7 @@ With Ok Report you’ll be able to get a detailed report of the patient's daily 
 <br/>
 
 # Contributors
-[Parth Arora](https://github.com/parthx9) - FrontEnd Developer <br/>
+[Parth Arora](https://github.com/parthx9) - Frontend Developer <br/>
 [Nishit Bhasin](https://github.com/realbhasin1) - Designer <br/>
 [Gautam Arora](https://github.com/Gautam-Arora24) - Backend Developer
 
