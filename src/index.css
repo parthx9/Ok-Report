@@ -1,13 +1,125 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+
+.containing {
+  padding: 15px 20px 15px 20px;
+}
+
+.side-navbar {
+  height: 100%;
+  background: #ffffff;
+}
+
+.main-area {
+  background: rgb(0, 255, 209, 0.17);
+}
+
+.navbar-brand {
+  padding: 15px 20px 15px 20px;
+}
+
+.corona-card {
+  background-color: #08e9cb;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.brand-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38.3333px;
+  line-height: 46px;
+  letter-spacing: 0.766667px;
+  color: #13d7bc;
+}
+
+.search {
+  border-radius: 15px;
+  width: 300px;
+  border: 0px;
+}
+
+.overview-area .card-body h6 {
+  color: #25282b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.overview-area .card-body h4 {
+  color: #13d7bc;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.nav li {
+  padding: 18px 5px 18px 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.120455px;
+  color: #52575c;
+}
+
+.nav .active {
+  color: #336cfb;
+}
+
+.nav li a:hover {
+  color: #336cfb;
+}
+
+.register-patient-btn {
+  background-color: #336cfb;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.120588px;
+  width: 300px;
+  color: #ffffff;
+}
+
+.main-area .card {
+  border-radius: 10px;
+  border: 0px;
+}
+
+.image-area .card {
+  height: 300px;
+}
+
+.detail-area .card {
+  height: 300px;
+}
+
+/* .appointment-area .card {
+} */
+
+.appointment-area .card-header {
+  color: #25282b;
+}
+/* .register-patient-btn:hover{
+    color: #336CFB;
+    background: #ffffff;
+} */
