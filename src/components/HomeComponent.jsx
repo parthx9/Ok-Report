@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import image from "../assets/image.png";
 
 class Home extends Component {
   constructor(props) {
@@ -21,7 +22,6 @@ class Home extends Component {
         },
       ],
       doctor: [],
-      arrayLength: 0,
     };
   }
   componentDidMount() {
@@ -44,8 +44,6 @@ class Home extends Component {
       .then((response) => response.json())
       // .then((response) => this.setState.doctor(patientDetails:))
       .then((result) => {
-        console.log(result);
-        this.setState({ arrayLength: result.doctor.patientDetails.length() });
         this.setState({ doctor: result.doctor });
       })
       .catch((error) => console.log("error", error));
@@ -129,7 +127,9 @@ class Home extends Component {
         <div className="row pb-4 image-area">
           <div className="col-12 image-section">
             <div className="card">
-              <div className="card-body"></div>
+              <div className="card-body">
+                <img src={image} style={{ width: "100%", height: "100%" }} />
+              </div>
             </div>
           </div>
         </div>
@@ -163,10 +163,21 @@ class Home extends Component {
           <div className="col-2">
             <div className="card">
               <div className="card-body">
-                Latest Patient
-                {this.state.doctor == null
-                  ? null
-                  : this.state.doctor.patientDetails.last()}
+                <h5 style={{ fontSize: 25, fontWeight: 900 }}>Nishit Bhasin</h5>
+                <p style={{ color: "#9D9CB5", fontSize: 16 }}>Cosmotology</p>
+                <ul
+                  style={{
+                    paddingLeft: 5,
+                    paddingTop: 10,
+                    color: "#13D7BC",
+                    fontWeight: 900,
+                    listStyleType: "none",
+                  }}
+                >
+                  <li>Age - 23</li>
+                  <li>Gender - Male</li>
+                  <li>City - Kanpur</li>
+                </ul>
               </div>
             </div>
           </div>
