@@ -30,5 +30,5 @@ mongoose
 app.use("/api/doctor", require("./Route.js/doctor"));
 
 app.listen(8000, (req, res) => {
-  console.log(`Server has started at port 8000`);
+  console.log(`Server has started at port 800`);
 });

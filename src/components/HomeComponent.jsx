@@ -21,38 +21,38 @@ class Home extends Component {
           data: [30, 40, 45, 50, 49, 60, 70, 91],
         },
       ],
-      doctor: [],
+      doctorData: this.props.doctorData,
     };
   }
   componentDidMount() {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    // var myHeaders = new Headers();
+    // myHeaders.append("Content-Type", "application/json");
 
-    var raw = JSON.stringify({ _id: "5f9c3ae6b6a05e2c29dc3cfa" });
+    // var raw = JSON.stringify({ _id: "5f9c3ae6b6a05e2c29dc3cfa" });
 
-    var requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow",
-    };
+    // var requestOptions = {
+    //   method: "POST",
+    //   headers: myHeaders,
+    //   body: raw,
+    //   redirect: "follow",
+    // };
 
-    fetch(
-      "http://88a58535d3d0.ngrok.io/api/doctor/getdoctordetails",
-      requestOptions
-    )
-      .then((response) => response.json())
-      // .then((response) => this.setState.doctor(patientDetails:))
-      .then((result) => {
-        this.setState({ doctor: result.doctor });
-      })
-      .catch((error) => console.log("error", error));
+    // fetch(
+    //   "http://88a58535d3d0.ngrok.io/api/doctor/getdoctordetails",
+    //   requestOptions
+    // )
+    //   .then((response) => response.json())
+    //   // .then((response) => this.setState.doctor(patientDetails:))
+    //   .then((result) => {
+    //     this.setState({ doctor: result.doctor });
+    //   })
+    //   .catch((error) => console.log("error", error));
   }
 
   render() {
     return (
       <div className="containing">
-        {console.log(this.state.doctor)}
+        {console.log(this.state.doctorData)}
         <div className="row">
           <form>
             <input
@@ -163,7 +163,7 @@ class Home extends Component {
           <div className="col-2">
             <div className="card">
               <div className="card-body">
-                <h5 style={{ fontSize: 25, fontWeight: 900 }}>Nishit Bhasin</h5>
+                <h5 style={{ fontSize: 25, fontWeight: 900 }}>{this.state.doctorData.patientDetails[0].name}</h5>
                 <p style={{ color: "#9D9CB5", fontSize: 16 }}>Cosmotology</p>
                 <ul
                   style={{
